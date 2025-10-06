@@ -75,12 +75,9 @@ GOOGLE_PROJECT_ID="seu-id-de-projeto-real-aqui"
 
 5. Autentique-se no Google Cloud
 
-Execute os dois comandos abaixo no seu terminal. O primeiro abre seu navegador para login, e o segundo vincula sua autenticação a um projeto para evitar erros de cota.
-
 Bash
 
 gcloud auth application-default login
-gcloud auth application-default set-quota-project SEU-ID-DE-PROJETO-REAL-AQUI
 
 ▶️ Como Executar
 Com tudo configurado, basta executar o script principal:
