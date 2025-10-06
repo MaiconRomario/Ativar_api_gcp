@@ -51,6 +51,7 @@ source venv/bin/activate
 Bash
 
 pip install -r requirements.txt
+
 4. Configure suas credenciais
 
 Copie o arquivo de exemplo para criar seu próprio arquivo de ambiente.
@@ -71,6 +72,7 @@ Ini, TOML
 
 # .env
 GOOGLE_PROJECT_ID="seu-id-de-projeto-real-aqui"
+
 5. Autentique-se no Google Cloud
 
 Execute os dois comandos abaixo no seu terminal. O primeiro abre seu navegador para login, e o segundo vincula sua autenticação a um projeto para evitar erros de cota.
@@ -86,6 +88,7 @@ Com tudo configurado, basta executar o script principal:
 Bash
 
 python main.py
+
 A saída no terminal mostrará o progresso:
 
 Verificando o serviço: run.googleapis.com...
