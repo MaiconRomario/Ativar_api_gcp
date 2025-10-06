@@ -150,7 +150,7 @@ profiler/
 # Optional: ignore local environment files (uncomment if you use them)
 .env
 .env.local
-.env.*
+
 
 # End of file
 
