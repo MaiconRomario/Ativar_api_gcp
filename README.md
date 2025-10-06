@@ -17,10 +17,10 @@ Um script Python simples projetado para automatizar a ativação de um conjunto 
 
 Antes de começar, garanta que você tenha o seguinte:
 
--   **Python 3.8+**
--   **Google Cloud SDK (gcloud CLI)**: Essencial para a autenticação. Se não tiver, [siga as instruções de instalação](https://cloud.google.com/sdk/docs/install).
--   **Um Projeto GCP**: Você precisa de um projeto criado no Google Cloud e do **ID do Projeto**.
--   **Permissões no GCP**: Sua conta precisa de permissões para habilitar APIs, como o papel `Service Usage Admin` (`roles/serviceusage.serviceUsageAdmin`).
+-   Python 3.8+
+-   Google Cloud SDK (`gcloud` CLI): Essencial para a autenticação. Se não tiver, [siga as instruções de instalação](https://cloud.google.com/sdk/docs/install).
+-   Um Projeto GCP: Você precisa de um projeto criado no Google Cloud e do **ID do Projeto**.
+-   Permissões no GCP: Sua conta precisa de permissões para habilitar APIs, como o papel `Service Usage Admin` (`roles/serviceusage.serviceUsageAdmin`).
 
 ---
 
@@ -32,21 +32,20 @@ Siga os passos abaixo para preparar e rodar o projeto.
 ```bash
 git clone [https://github.com/SEU-USUARIO/NOME-DO-SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-SEU-REPOSITORIO.git)
 cd NOME-DO-SEU-REPOSITORIO
-
 2. Crie e ative um ambiente virtual
 
+No Windows (PowerShell):
+
+PowerShell
+
+python -m venv venv
+.\venv\Scripts\Activate.ps1
 No Linux ou macOS:
 
 Bash
 
 python3 -m venv venv
 source venv/bin/activate
-No Windows (PowerShell):
-
-Bash
-
-python -m venv venv
-.\venv\Scripts\Activate.ps1
 3. Instale as dependências
 
 Bash
@@ -54,7 +53,14 @@ Bash
 pip install -r requirements.txt
 4. Configure suas credenciais
 
-Copie o arquivo de exemplo para criar seu próprio arquivo de ambiente:
+Copie o arquivo de exemplo para criar seu próprio arquivo de ambiente.
+
+No Windows (PowerShell/CMD):
+
+PowerShell
+
+copy .env.example .env
+No Linux ou macOS:
 
 Bash
 
@@ -104,6 +110,3 @@ cloudbuild.googleapis.com (Cloud Build)
 iam.googleapis.com (Identity and Access Management - IAM)
 
 Para adicionar ou remover APIs, edite a lista services_to_enable no arquivo main.py.
-```bash
-git clone [https://github.com/SEU-USUARIO/NOME-DO-SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-SEU-REPOSITORIO.git)
-cd NOME-DO-SEU-REPOSITORIO
