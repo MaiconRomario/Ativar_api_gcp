@@ -1,0 +1,156 @@
+(# .gitignore gerado: projeto Python no Windows + GCP + VSCode)
+# Comentários em português para facilitar a manutenção.
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+eggs/
+*.egg-info/
+pip-wheel-metadata/
+wheelhouse/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.cover
+*.py,cover
+
+# Translations
+*.mo
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask instance folder
+instance/
+
+# Scrapy stuff
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# pytest
+cache/
+
+# mypy
+.mypy_cache/
+*.mypy_cache
+
+# Pyre
+.pyre/
+
+# IDEs and editors
+.idea/
+.vscode/
+# If you want to keep workspace settings committed, remove the previous line or list files to keep
+*.sublime-project
+*.sublime-workspace
+
+# VS Code specific (optional - ignore local launch and debug settings)
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/*.code-workspace
+
+# OS files (Windows/Mac)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Secrets, keys and credentials (GCP service account JSONs, local credential files)
+# Important: don't blindly ignore all JSON files if your project needs them in repo.
+secrets/
+credentials/
+*.key
+*.pem
+*.p12
+*-credentials.json
+service-account*.json
+*-sa.json
+google-credentials.json
+*.creds
+.gcloud
+
+# Terraform (if used)
+*.tfstate
+*.tfstate.*
+crash.log
+.terraform/
+
+# Docker
+docker-compose.override.yml
+docker-compose.*.yml
+
+# Compiled Python files
+*.pyc
+*.pyd
+
+# Coverage and profiling
+profiler/
+
+# Optional: ignore local environment files (uncomment if you use them)
+.env
+.env.local
+.env.*
+
+# End of file
+
